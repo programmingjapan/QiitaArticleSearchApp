@@ -1,0 +1,787 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12FA0B29EB2717707F778D4A /* Pods_QiitaArticleSearchApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 138663C1E40058C84A360D5A /* Pods_QiitaArticleSearchApp.framework */; };
+		2717E27AFB8ED65F67A7FDDF /* Pods_QiitaArticleSearchApp_QiitaArticleSearchAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F6DE54760C0819A0B4A021 /* Pods_QiitaArticleSearchApp_QiitaArticleSearchAppUITests.framework */; };
+		6CE36E8447333BB6ADCB4015 /* Pods_QiitaArticleSearchAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96922383CBA9DEB81F661850 /* Pods_QiitaArticleSearchAppTests.framework */; };
+		F26296A4248B5A6300C4A996 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F26296A3248B5A6300C4A996 /* GoogleService-Info.plist */; };
+		F2B2F36F2471236F00427A13 /* FavoritesItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B2F36E2471236F00427A13 /* FavoritesItem.swift */; };
+		F2B2F37124712CA400427A13 /* FavoritesListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B2F37024712CA400427A13 /* FavoritesListTableViewController.swift */; };
+		F2B2F37324712CCF00427A13 /* FavoritesWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B2F37224712CCF00427A13 /* FavoritesWebViewController.swift */; };
+		F2BD5D992482562B00ACCFC3 /* HomeWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD5D982482562B00ACCFC3 /* HomeWebViewController.swift */; };
+		F2C1B3E7246D3AF800854277 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C1B3E6246D3AF800854277 /* AppDelegate.swift */; };
+		F2C1B3E9246D3AF800854277 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C1B3E8246D3AF800854277 /* SceneDelegate.swift */; };
+		F2C1B3EB246D3AF800854277 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C1B3EA246D3AF800854277 /* ViewController.swift */; };
+		F2C1B3EE246D3AF800854277 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2C1B3EC246D3AF800854277 /* Main.storyboard */; };
+		F2C1B3F0246D3AFB00854277 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2C1B3EF246D3AFB00854277 /* Assets.xcassets */; };
+		F2C1B3F3246D3AFB00854277 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2C1B3F1246D3AFB00854277 /* LaunchScreen.storyboard */; };
+		F2C1B3FE246D3AFB00854277 /* QiitaArticleSearchAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C1B3FD246D3AFB00854277 /* QiitaArticleSearchAppTests.swift */; };
+		F2C1B409246D3AFB00854277 /* QiitaArticleSearchAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C1B408246D3AFB00854277 /* QiitaArticleSearchAppUITests.swift */; };
+		F2C1B417246D3CCD00854277 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2C1B416246D3CCD00854277 /* WebKit.framework */; };
+		F2C1B419246D7C8C00854277 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C1B418246D7C8C00854277 /* ListTableViewController.swift */; };
+		F2C1B41B246D9EF200854277 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C1B41A246D9EF200854277 /* WebViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2C1B3FA246D3AFB00854277 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2C1B3DB246D3AF800854277 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2C1B3E2246D3AF800854277;
+			remoteInfo = QiitaArticleSearchApp;
+		};
+		F2C1B405246D3AFB00854277 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2C1B3DB246D3AF800854277 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2C1B3E2246D3AF800854277;
+			remoteInfo = QiitaArticleSearchApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		138663C1E40058C84A360D5A /* Pods_QiitaArticleSearchApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QiitaArticleSearchApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E73403D8A03489BF558B0AB /* Pods-QiitaArticleSearchApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiitaArticleSearchApp.release.xcconfig"; path = "Target Support Files/Pods-QiitaArticleSearchApp/Pods-QiitaArticleSearchApp.release.xcconfig"; sourceTree = "<group>"; };
+		5614A874833616658837CF1E /* Pods-QiitaArticleSearchApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiitaArticleSearchApp.debug.xcconfig"; path = "Target Support Files/Pods-QiitaArticleSearchApp/Pods-QiitaArticleSearchApp.debug.xcconfig"; sourceTree = "<group>"; };
+		65F6DE54760C0819A0B4A021 /* Pods_QiitaArticleSearchApp_QiitaArticleSearchAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QiitaArticleSearchApp_QiitaArticleSearchAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		711B886FF31D906FC12705A6 /* Pods-QiitaArticleSearchApp-QiitaArticleSearchAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiitaArticleSearchApp-QiitaArticleSearchAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-QiitaArticleSearchApp-QiitaArticleSearchAppUITests/Pods-QiitaArticleSearchApp-QiitaArticleSearchAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7590F2A18DFBFE9AA7EEB1F7 /* Pods-QiitaArticleSearchApp-QiitaArticleSearchAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiitaArticleSearchApp-QiitaArticleSearchAppUITests.release.xcconfig"; path = "Target Support Files/Pods-QiitaArticleSearchApp-QiitaArticleSearchAppUITests/Pods-QiitaArticleSearchApp-QiitaArticleSearchAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		962EA751725471DBC87E886D /* Pods-QiitaArticleSearchAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiitaArticleSearchAppTests.release.xcconfig"; path = "Target Support Files/Pods-QiitaArticleSearchAppTests/Pods-QiitaArticleSearchAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		96922383CBA9DEB81F661850 /* Pods_QiitaArticleSearchAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QiitaArticleSearchAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D205829A63972EC02D4E954D /* Pods-QiitaArticleSearchAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiitaArticleSearchAppTests.debug.xcconfig"; path = "Target Support Files/Pods-QiitaArticleSearchAppTests/Pods-QiitaArticleSearchAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F26296A3248B5A6300C4A996 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F2B2F36E2471236F00427A13 /* FavoritesItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesItem.swift; sourceTree = "<group>"; };
+		F2B2F37024712CA400427A13 /* FavoritesListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListTableViewController.swift; sourceTree = "<group>"; };
+		F2B2F37224712CCF00427A13 /* FavoritesWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesWebViewController.swift; sourceTree = "<group>"; };
+		F2BD5D982482562B00ACCFC3 /* HomeWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWebViewController.swift; sourceTree = "<group>"; };
+		F2C0065E249470BF004177EC /* My Qiita.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "My Qiita.entitlements"; sourceTree = "<group>"; };
+		F2C1B3E3246D3AF800854277 /* My Qiita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Qiita.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2C1B3E6246D3AF800854277 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F2C1B3E8246D3AF800854277 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F2C1B3EA246D3AF800854277 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F2C1B3ED246D3AF800854277 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F2C1B3EF246D3AFB00854277 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2C1B3F2246D3AFB00854277 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F2C1B3F4246D3AFB00854277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2C1B3F9246D3AFB00854277 /* QiitaArticleSearchAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QiitaArticleSearchAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2C1B3FD246D3AFB00854277 /* QiitaArticleSearchAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaArticleSearchAppTests.swift; sourceTree = "<group>"; };
+		F2C1B3FF246D3AFB00854277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2C1B404246D3AFB00854277 /* QiitaArticleSearchAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QiitaArticleSearchAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2C1B408246D3AFB00854277 /* QiitaArticleSearchAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaArticleSearchAppUITests.swift; sourceTree = "<group>"; };
+		F2C1B40A246D3AFB00854277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2C1B416246D3CCD00854277 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		F2C1B418246D7C8C00854277 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		F2C1B41A246D9EF200854277 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2C1B3E0246D3AF800854277 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2C1B417246D3CCD00854277 /* WebKit.framework in Frameworks */,
+				12FA0B29EB2717707F778D4A /* Pods_QiitaArticleSearchApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2C1B3F6246D3AFB00854277 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CE36E8447333BB6ADCB4015 /* Pods_QiitaArticleSearchAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2C1B401246D3AFB00854277 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2717E27AFB8ED65F67A7FDDF /* Pods_QiitaArticleSearchApp_QiitaArticleSearchAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D989CB7F792C068B8CF2D77 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5614A874833616658837CF1E /* Pods-QiitaArticleSearchApp.debug.xcconfig */,
+				4E73403D8A03489BF558B0AB /* Pods-QiitaArticleSearchApp.release.xcconfig */,
+				711B886FF31D906FC12705A6 /* Pods-QiitaArticleSearchApp-QiitaArticleSearchAppUITests.debug.xcconfig */,
+				7590F2A18DFBFE9AA7EEB1F7 /* Pods-QiitaArticleSearchApp-QiitaArticleSearchAppUITests.release.xcconfig */,
+				D205829A63972EC02D4E954D /* Pods-QiitaArticleSearchAppTests.debug.xcconfig */,
+				962EA751725471DBC87E886D /* Pods-QiitaArticleSearchAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B95D122A4C8CB3CEE8B1E771 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2C1B416246D3CCD00854277 /* WebKit.framework */,
+				138663C1E40058C84A360D5A /* Pods_QiitaArticleSearchApp.framework */,
+				65F6DE54760C0819A0B4A021 /* Pods_QiitaArticleSearchApp_QiitaArticleSearchAppUITests.framework */,
+				96922383CBA9DEB81F661850 /* Pods_QiitaArticleSearchAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2C1B3DA246D3AF800854277 = {
+			isa = PBXGroup;
+			children = (
+				F2C1B3E5246D3AF800854277 /* QiitaArticleSearchApp */,
+				F2C1B3FC246D3AFB00854277 /* QiitaArticleSearchAppTests */,
+				F2C1B407246D3AFB00854277 /* QiitaArticleSearchAppUITests */,
+				F2C1B3E4246D3AF800854277 /* Products */,
+				5D989CB7F792C068B8CF2D77 /* Pods */,
+				B95D122A4C8CB3CEE8B1E771 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F2C1B3E4246D3AF800854277 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2C1B3E3246D3AF800854277 /* My Qiita.app */,
+				F2C1B3F9246D3AFB00854277 /* QiitaArticleSearchAppTests.xctest */,
+				F2C1B404246D3AFB00854277 /* QiitaArticleSearchAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2C1B3E5246D3AF800854277 /* QiitaArticleSearchApp */ = {
+			isa = PBXGroup;
+			children = (
+				F2C0065E249470BF004177EC /* My Qiita.entitlements */,
+				F26296A3248B5A6300C4A996 /* GoogleService-Info.plist */,
+				F2C1B3E6246D3AF800854277 /* AppDelegate.swift */,
+				F2C1B3E8246D3AF800854277 /* SceneDelegate.swift */,
+				F2C1B3EA246D3AF800854277 /* ViewController.swift */,
+				F2BD5D982482562B00ACCFC3 /* HomeWebViewController.swift */,
+				F2C1B3EC246D3AF800854277 /* Main.storyboard */,
+				F2C1B3EF246D3AFB00854277 /* Assets.xcassets */,
+				F2C1B3F1246D3AFB00854277 /* LaunchScreen.storyboard */,
+				F2C1B3F4246D3AFB00854277 /* Info.plist */,
+				F2C1B418246D7C8C00854277 /* ListTableViewController.swift */,
+				F2C1B41A246D9EF200854277 /* WebViewController.swift */,
+				F2B2F36E2471236F00427A13 /* FavoritesItem.swift */,
+				F2B2F37024712CA400427A13 /* FavoritesListTableViewController.swift */,
+				F2B2F37224712CCF00427A13 /* FavoritesWebViewController.swift */,
+			);
+			path = QiitaArticleSearchApp;
+			sourceTree = "<group>";
+		};
+		F2C1B3FC246D3AFB00854277 /* QiitaArticleSearchAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2C1B3FD246D3AFB00854277 /* QiitaArticleSearchAppTests.swift */,
+				F2C1B3FF246D3AFB00854277 /* Info.plist */,
+			);
+			path = QiitaArticleSearchAppTests;
+			sourceTree = "<group>";
+		};
+		F2C1B407246D3AFB00854277 /* QiitaArticleSearchAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F2C1B408246D3AFB00854277 /* QiitaArticleSearchAppUITests.swift */,
+				F2C1B40A246D3AFB00854277 /* Info.plist */,
+			);
+			path = QiitaArticleSearchAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2C1B3E2246D3AF800854277 /* QiitaArticleSearchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2C1B40D246D3AFB00854277 /* Build configuration list for PBXNativeTarget "QiitaArticleSearchApp" */;
+			buildPhases = (
+				4F9DA4BE104CCD513D9ADBB2 /* [CP] Check Pods Manifest.lock */,
+				F2C1B3DF246D3AF800854277 /* Sources */,
+				F2C1B3E0246D3AF800854277 /* Frameworks */,
+				F2C1B3E1246D3AF800854277 /* Resources */,
+				7C3B5B4A69207D7E1E5C5C20 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QiitaArticleSearchApp;
+			productName = QiitaArticleSearchApp;
+			productReference = F2C1B3E3246D3AF800854277 /* My Qiita.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2C1B3F8246D3AFB00854277 /* QiitaArticleSearchAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2C1B410246D3AFB00854277 /* Build configuration list for PBXNativeTarget "QiitaArticleSearchAppTests" */;
+			buildPhases = (
+				52DB9CB4693CCD0A87CFE70B /* [CP] Check Pods Manifest.lock */,
+				F2C1B3F5246D3AFB00854277 /* Sources */,
+				F2C1B3F6246D3AFB00854277 /* Frameworks */,
+				F2C1B3F7246D3AFB00854277 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2C1B3FB246D3AFB00854277 /* PBXTargetDependency */,
+			);
+			name = QiitaArticleSearchAppTests;
+			productName = QiitaArticleSearchAppTests;
+			productReference = F2C1B3F9246D3AFB00854277 /* QiitaArticleSearchAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F2C1B403246D3AFB00854277 /* QiitaArticleSearchAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2C1B413246D3AFB00854277 /* Build configuration list for PBXNativeTarget "QiitaArticleSearchAppUITests" */;
+			buildPhases = (
+				62F25371ABA425ABFA0DD23C /* [CP] Check Pods Manifest.lock */,
+				F2C1B400246D3AFB00854277 /* Sources */,
+				F2C1B401246D3AFB00854277 /* Frameworks */,
+				F2C1B402246D3AFB00854277 /* Resources */,
+				8B0966A876E5D878ED08CC85 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2C1B406246D3AFB00854277 /* PBXTargetDependency */,
+			);
+			name = QiitaArticleSearchAppUITests;
+			productName = QiitaArticleSearchAppUITests;
+			productReference = F2C1B404246D3AFB00854277 /* QiitaArticleSearchAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2C1B3DB246D3AF800854277 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Hideto Kamei";
+				TargetAttributes = {
+					F2C1B3E2246D3AF800854277 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					F2C1B3F8246D3AFB00854277 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = F2C1B3E2246D3AF800854277;
+					};
+					F2C1B403246D3AFB00854277 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = F2C1B3E2246D3AF800854277;
+					};
+				};
+			};
+			buildConfigurationList = F2C1B3DE246D3AF800854277 /* Build configuration list for PBXProject "QiitaArticleSearchApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2C1B3DA246D3AF800854277;
+			productRefGroup = F2C1B3E4246D3AF800854277 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2C1B3E2246D3AF800854277 /* QiitaArticleSearchApp */,
+				F2C1B3F8246D3AFB00854277 /* QiitaArticleSearchAppTests */,
+				F2C1B403246D3AFB00854277 /* QiitaArticleSearchAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2C1B3E1246D3AF800854277 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2C1B3F3246D3AFB00854277 /* LaunchScreen.storyboard in Resources */,
+				F26296A4248B5A6300C4A996 /* GoogleService-Info.plist in Resources */,
+				F2C1B3F0246D3AFB00854277 /* Assets.xcassets in Resources */,
+				F2C1B3EE246D3AF800854277 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2C1B3F7246D3AFB00854277 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2C1B402246D3AFB00854277 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F9DA4BE104CCD513D9ADBB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QiitaArticleSearchApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52DB9CB4693CCD0A87CFE70B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QiitaArticleSearchAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62F25371ABA425ABFA0DD23C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QiitaArticleSearchApp-QiitaArticleSearchAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C3B5B4A69207D7E1E5C5C20 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QiitaArticleSearchApp/Pods-QiitaArticleSearchApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QiitaArticleSearchApp/Pods-QiitaArticleSearchApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QiitaArticleSearchApp/Pods-QiitaArticleSearchApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B0966A876E5D878ED08CC85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QiitaArticleSearchApp-QiitaArticleSearchAppUITests/Pods-QiitaArticleSearchApp-QiitaArticleSearchAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QiitaArticleSearchApp-QiitaArticleSearchAppUITests/Pods-QiitaArticleSearchApp-QiitaArticleSearchAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QiitaArticleSearchApp-QiitaArticleSearchAppUITests/Pods-QiitaArticleSearchApp-QiitaArticleSearchAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2C1B3DF246D3AF800854277 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2C1B3EB246D3AF800854277 /* ViewController.swift in Sources */,
+				F2B2F37124712CA400427A13 /* FavoritesListTableViewController.swift in Sources */,
+				F2BD5D992482562B00ACCFC3 /* HomeWebViewController.swift in Sources */,
+				F2C1B3E7246D3AF800854277 /* AppDelegate.swift in Sources */,
+				F2B2F36F2471236F00427A13 /* FavoritesItem.swift in Sources */,
+				F2C1B3E9246D3AF800854277 /* SceneDelegate.swift in Sources */,
+				F2C1B41B246D9EF200854277 /* WebViewController.swift in Sources */,
+				F2B2F37324712CCF00427A13 /* FavoritesWebViewController.swift in Sources */,
+				F2C1B419246D7C8C00854277 /* ListTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2C1B3F5246D3AFB00854277 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2C1B3FE246D3AFB00854277 /* QiitaArticleSearchAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2C1B400246D3AFB00854277 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2C1B409246D3AFB00854277 /* QiitaArticleSearchAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2C1B3FB246D3AFB00854277 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2C1B3E2246D3AF800854277 /* QiitaArticleSearchApp */;
+			targetProxy = F2C1B3FA246D3AFB00854277 /* PBXContainerItemProxy */;
+		};
+		F2C1B406246D3AFB00854277 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2C1B3E2246D3AF800854277 /* QiitaArticleSearchApp */;
+			targetProxy = F2C1B405246D3AFB00854277 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F2C1B3EC246D3AF800854277 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2C1B3ED246D3AF800854277 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F2C1B3F1246D3AFB00854277 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2C1B3F2246D3AFB00854277 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2C1B40B246D3AFB00854277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F2C1B40C246D3AFB00854277 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2C1B40E246D3AFB00854277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5614A874833616658837CF1E /* Pods-QiitaArticleSearchApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "QiitaArticleSearchApp/My Qiita.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = X7U7M4AR9W;
+				INFOPLIST_FILE = QiitaArticleSearchApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.hidetokamei.wildcard;
+				PRODUCT_NAME = "My Qiita";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F2C1B40F246D3AFB00854277 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E73403D8A03489BF558B0AB /* Pods-QiitaArticleSearchApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "QiitaArticleSearchApp/My Qiita.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = X7U7M4AR9W;
+				INFOPLIST_FILE = QiitaArticleSearchApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.hidetokamei.wildcard;
+				PRODUCT_NAME = "My Qiita";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F2C1B411246D3AFB00854277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D205829A63972EC02D4E954D /* Pods-QiitaArticleSearchAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QiitaArticleSearchAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Kamei.QiitaArticleSearchAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QiitaArticleSearchApp.app/QiitaArticleSearchApp";
+			};
+			name = Debug;
+		};
+		F2C1B412246D3AFB00854277 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 962EA751725471DBC87E886D /* Pods-QiitaArticleSearchAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QiitaArticleSearchAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Kamei.QiitaArticleSearchAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QiitaArticleSearchApp.app/QiitaArticleSearchApp";
+			};
+			name = Release;
+		};
+		F2C1B414246D3AFB00854277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 711B886FF31D906FC12705A6 /* Pods-QiitaArticleSearchApp-QiitaArticleSearchAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QiitaArticleSearchAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Kamei.QiitaArticleSearchAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QiitaArticleSearchApp;
+			};
+			name = Debug;
+		};
+		F2C1B415246D3AFB00854277 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7590F2A18DFBFE9AA7EEB1F7 /* Pods-QiitaArticleSearchApp-QiitaArticleSearchAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QiitaArticleSearchAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Kamei.QiitaArticleSearchAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QiitaArticleSearchApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2C1B3DE246D3AF800854277 /* Build configuration list for PBXProject "QiitaArticleSearchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2C1B40B246D3AFB00854277 /* Debug */,
+				F2C1B40C246D3AFB00854277 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2C1B40D246D3AFB00854277 /* Build configuration list for PBXNativeTarget "QiitaArticleSearchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2C1B40E246D3AFB00854277 /* Debug */,
+				F2C1B40F246D3AFB00854277 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2C1B410246D3AFB00854277 /* Build configuration list for PBXNativeTarget "QiitaArticleSearchAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2C1B411246D3AFB00854277 /* Debug */,
+				F2C1B412246D3AFB00854277 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2C1B413246D3AFB00854277 /* Build configuration list for PBXNativeTarget "QiitaArticleSearchAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2C1B414246D3AFB00854277 /* Debug */,
+				F2C1B415246D3AFB00854277 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2C1B3DB246D3AF800854277 /* Project object */;
+}

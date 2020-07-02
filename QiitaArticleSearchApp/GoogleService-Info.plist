@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>90164599985-3emogtmkt2dijqdbnc13dad85r4fj83e.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.90164599985-3emogtmkt2dijqdbnc13dad85r4fj83e</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAByIJXnoHBQyx9cNW0Ce-PVyB30Hau3mk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>90164599985</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>jp.hidetokamei.wildcard</string>
+	<key>PROJECT_ID</key>
+	<string>qiitaapp-c867a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>qiitaapp-c867a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:90164599985:ios:069cbab76289b612a55690</string>
+	<key>DATABASE_URL</key>
+	<string>https://qiitaapp-c867a.firebaseio.com</string>
+</dict>
+</plist>

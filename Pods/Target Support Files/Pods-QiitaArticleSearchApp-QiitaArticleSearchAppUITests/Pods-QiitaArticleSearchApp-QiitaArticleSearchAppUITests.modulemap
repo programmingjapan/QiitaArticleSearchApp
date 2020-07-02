@@ -1,0 +1,6 @@
+framework module Pods_QiitaArticleSearchApp_QiitaArticleSearchAppUITests {
+  umbrella header "Pods-QiitaArticleSearchApp-QiitaArticleSearchAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

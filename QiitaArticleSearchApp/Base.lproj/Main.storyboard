@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yfL-MH-BRf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Web View Controller-->
+        <scene sceneID="pho-tL-6Ht">
+            <objects>
+                <viewController id="l30-Ue-fOx" customClass="HomeWebViewController" customModule="My_Qiita" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PaB-9w-wNc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DPe-Y4-3bR">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DPe-Y4-3bR" firstAttribute="top" secondItem="3o7-FU-VMI" secondAttribute="top" id="FJN-pd-HoY"/>
+                            <constraint firstItem="DPe-Y4-3bR" firstAttribute="leading" secondItem="3o7-FU-VMI" secondAttribute="leading" id="NDB-wp-EMU"/>
+                            <constraint firstItem="3o7-FU-VMI" firstAttribute="trailing" secondItem="DPe-Y4-3bR" secondAttribute="trailing" id="QZA-oK-hp2"/>
+                            <constraint firstItem="3o7-FU-VMI" firstAttribute="bottom" secondItem="DPe-Y4-3bR" secondAttribute="bottom" id="l4j-0r-1RS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3o7-FU-VMI"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cWB-IV-MWg"/>
+                    <connections>
+                        <outlet property="homeWebView" destination="DPe-Y4-3bR" id="3hI-qL-pbL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WNj-wA-OEO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="886" y="-933"/>
+        </scene>
+        <!--Qiita 新着記事-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="My_Qiita" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="検索キーワードをここに入力" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="mD4-O0-3W3">
+                                <rect key="frame" x="0.0" y="88" width="414" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="XUy-tO-aI2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dJ4-qs-9Hb">
+                                <rect key="frame" x="0.0" y="130" width="414" height="683"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="homeCell" textLabel="CXW-2O-kpL" detailTextLabel="clb-nu-PMu" style="IBUITableViewCellStyleSubtitle" id="HwZ-bh-vef">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HwZ-bh-vef" id="mWS-O0-rbN">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CXW-2O-kpL">
+                                                    <rect key="frame" x="20" y="10" width="33.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="clb-nu-PMu">
+                                                    <rect key="frame" x="20" y="31.5" width="44" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="nMp-QD-hgb"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="PjZ-eY-Ejw"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="dJ4-qs-9Hb" firstAttribute="top" secondItem="mD4-O0-3W3" secondAttribute="bottom" id="8GL-Gu-5ab"/>
+                            <constraint firstItem="dJ4-qs-9Hb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="N3o-ZC-b2Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dJ4-qs-9Hb" secondAttribute="bottom" id="ZTZ-g5-Cb6"/>
+                            <constraint firstItem="mD4-O0-3W3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dMb-yI-tq6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mD4-O0-3W3" secondAttribute="trailing" id="fvo-c3-KUz"/>
+                            <constraint firstItem="mD4-O0-3W3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zbQ-DH-79w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dJ4-qs-9Hb" secondAttribute="trailing" id="zis-dl-SCn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Qiita 新着記事" id="AGz-NZ-Cfa"/>
+                    <connections>
+                        <outlet property="homeTableView" destination="dJ4-qs-9Hb" id="YsD-PV-UQ3"/>
+                        <outlet property="searchText" destination="mD4-O0-3W3" id="VKR-R0-exf"/>
+                        <segue destination="lL0-G5-YrF" kind="show" identifier="goList" id="f08-JL-9Qp"/>
+                        <segue destination="l30-Ue-fOx" kind="show" identifier="goHomeView" id="FV5-LX-gz6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="741" y="-98"/>
+        </scene>
+        <!--検索記事一覧-->
+        <scene sceneID="LTk-P3-ndY">
+            <objects>
+                <tableViewController id="lL0-G5-YrF" customClass="ListTableViewController" customModule="My_Qiita" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="b4M-UN-FRW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="jPt-co-3w8">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jPt-co-3w8" id="hTp-6N-Hzd">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="hb1-Mj-odp" kind="show" identifier="goView" id="6Bi-Ta-qBR"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="lL0-G5-YrF" id="Kkv-Xw-1kA"/>
+                            <outlet property="delegate" destination="lL0-G5-YrF" id="uvi-yT-xym"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="検索記事一覧" id="PgG-VK-2ul"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4zp-Tn-Odo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1559" y="-98"/>
+        </scene>
+        <!--記事詳細-->
+        <scene sceneID="cyn-O5-k42">
+            <objects>
+                <viewController id="hb1-Mj-odp" customClass="WebViewController" customModule="My_Qiita" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vX4-bz-1u7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lcx-MT-3Md">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rD2-5M-1Tf" firstAttribute="trailing" secondItem="Lcx-MT-3Md" secondAttribute="trailing" id="41u-5S-Oma"/>
+                            <constraint firstItem="Lcx-MT-3Md" firstAttribute="leading" secondItem="rD2-5M-1Tf" secondAttribute="leading" id="IDr-89-tI8"/>
+                            <constraint firstItem="rD2-5M-1Tf" firstAttribute="bottom" secondItem="Lcx-MT-3Md" secondAttribute="bottom" id="dig-7g-zPI"/>
+                            <constraint firstItem="Lcx-MT-3Md" firstAttribute="top" secondItem="rD2-5M-1Tf" secondAttribute="top" id="qOw-EB-t4g"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rD2-5M-1Tf"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="記事詳細" id="3QG-6D-xgz">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="star.fill" catalog="system" id="ovI-Kl-pi7">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="saveButtonAction:" destination="hb1-Mj-odp" id="ghk-CN-ol6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="webView" destination="Lcx-MT-3Md" id="4dB-Kq-Jb0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P7h-RV-VTh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2280" y="-98"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="SC5-Nd-vdk">
+            <objects>
+                <tabBarController id="yfL-MH-BRf" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="P2Q-re-7p2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.0" green="0.91764705882352937" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BBv-kL-luK" kind="relationship" relationship="viewControllers" id="9Su-EQ-Brq"/>
+                        <segue destination="T5H-RX-WQS" kind="relationship" relationship="viewControllers" id="Dk7-bE-wWH"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d02-Mb-83i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-842" y="54"/>
+        </scene>
+        <!--ホーム-->
+        <scene sceneID="5R4-MF-gLb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BBv-kL-luK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="ホーム" image="house.fill" catalog="system" id="Fdv-ft-yqe"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qv1-zX-fJE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.91764705882352937" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="umY-IF-PHK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Srl-wd-gPP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-20.289855072463769" y="-98.4375"/>
+        </scene>
+        <!--お気に入り-->
+        <scene sceneID="MYe-js-x6e">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T5H-RX-WQS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="1" title="お気に入り" image="star.fill" catalog="system" id="AnL-7D-keX"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bPw-Pr-Ytp">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.91764705882352937" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="w4O-JC-wPE" kind="relationship" relationship="rootViewController" id="udA-fd-s7N"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pn9-tg-PxF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-20" y="599"/>
+        </scene>
+        <!--お気に入り記事一覧-->
+        <scene sceneID="N3n-Gp-VoS">
+            <objects>
+                <tableViewController id="w4O-JC-wPE" customClass="FavoritesListTableViewController" customModule="My_Qiita" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Pl9-97-JEs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="favoritesCell" id="kgE-VC-0wi">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kgE-VC-0wi" id="fXr-0a-ytU">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="2CZ-8X-PA4" kind="show" identifier="goFavoritesView" id="Bop-3F-ghi"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="w4O-JC-wPE" id="jPS-hX-x1K"/>
+                            <outlet property="delegate" destination="w4O-JC-wPE" id="cO3-wQ-gAy"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="お気に入り記事一覧" id="KPf-2z-UrM"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JFB-Jm-5eV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1490" y="583"/>
+        </scene>
+        <!--お気に入り記事詳細-->
+        <scene sceneID="Mc6-Af-gos">
+            <objects>
+                <viewController id="2CZ-8X-PA4" customClass="FavoritesWebViewController" customModule="My_Qiita" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DEY-gT-aAV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Czu-OG-S2i">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="oem-dW-f2v" firstAttribute="bottom" secondItem="Czu-OG-S2i" secondAttribute="bottom" id="93Y-99-EsP"/>
+                            <constraint firstItem="Czu-OG-S2i" firstAttribute="top" secondItem="oem-dW-f2v" secondAttribute="top" id="VAf-NA-zzM"/>
+                            <constraint firstItem="oem-dW-f2v" firstAttribute="trailing" secondItem="Czu-OG-S2i" secondAttribute="trailing" id="e07-jg-CCu"/>
+                            <constraint firstItem="Czu-OG-S2i" firstAttribute="leading" secondItem="oem-dW-f2v" secondAttribute="leading" id="vFe-RA-PkM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oem-dW-f2v"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="お気に入り記事詳細" id="21b-m5-ZOd"/>
+                    <connections>
+                        <outlet property="favoritesWebView" destination="Czu-OG-S2i" id="CJt-Yh-8gT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KkI-s4-3Qj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2243" y="583"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+    </resources>
+</document>
